@@ -40,7 +40,7 @@ function usePokemonData(apiUrl) {
                 })
             );
 
-            setData((prevData) => [...prevData, ...detailedData]);
+            setData(detailedData);
             setLoading(false);
       
         } catch (err) {
